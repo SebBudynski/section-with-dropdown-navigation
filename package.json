@@ -1,16 +1,19 @@
 {
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "node-sass": "^9.0.0",
-    "npm-run-all": "^4.1.5"
+    "npm": "^10.4.0",
+    "npm-run-all": "^4.1.5",
+    "run": "^1.5.0",
+    "sass": "^1.71.0"
   },
   "scripts": {
     "server": "node server.js",
-    "sync": "browser-sync start --proxy localhost:3000 --files *.html styles/style.css",
-    "start": "npm-run-all --parallel server sync",
-    "sass": "node-sass --watch styles/style.scss -o styles/style.css"
+    "sass": "node-sass -w styles/ -o styles/",
+    "sync": "browser-sync start --proxy localhost:3000 --files '**/*.scss, **/*.html'",
+    "start": "npm-run-all --parallel server sass sync"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }

@@ -1,21 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(200, 15%, 8%);
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-
-
+@import "components/reset.scss";
 
 
 .attribution {
@@ -25,6 +8,3 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-
-
