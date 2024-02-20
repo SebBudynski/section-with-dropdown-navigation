@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 3rem;
+  width: 80vw;
+}
+
+.txt-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 5.5rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 25rem;
+  color: var(--medium-gray);
+  line-height: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.learn-more {
+  background-color: var(--almost-black);
+  border-radius: 8px;
+  color: var(--almost-white);
+  padding: 0.6rem;
+  width: 6.4rem;
+  &:hover {
+    background-color: inherit;
+    border: 1px solid var(--almost-black);
+  }
+}
+.app-logo-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-self: flex-end;
+  width: 100%;
+}
+
+.main-img {
+  width: 25rem;
+  img {
+    width: 100%;
+  }
+}

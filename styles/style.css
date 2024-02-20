@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%); }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -127,12 +132,108 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.attribution {
+html {
+  font-size: 18px;
+  font-family: Epilogue, sans-serif; }
+
+body {
+  margin: 1rem 2rem; }
+
+header {
+  display: flex; }
+
+.logo-container {
+  margin-right: 3rem;
+  width: 4rem; }
+
+.logo-container img {
+  width: 100%; }
+
+button {
+  background: inherit;
+  border: none;
+  color: var(--medium-gray);
+  font-weight: 700;
+  width: 5rem;
+  cursor: pointer; }
+
+button:hover {
+  color: var(--almost-black); }
+
+.dropdown-content {
+  display: none;
+  flex-direction: column; }
+
+#features {
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+#company {
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.login {
+  margin-left: auto; }
+
+.register {
+  border: 1px solid var(--almost-black);
+  border-radius: 8px; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 3rem;
+  width: 80vw; }
+
+.txt-content {
+  display: flex;
+  flex-direction: column; }
+
+h1 {
+  font-size: 4.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 5.5rem;
+  font-weight: 700; }
+
+p {
+  max-width: 25rem;
+  color: var(--medium-gray);
+  line-height: 1.3rem;
+  margin-bottom: 2rem; }
+
+.learn-more {
+  background-color: var(--almost-black);
+  border-radius: 8px;
+  color: var(--almost-white);
+  padding: 0.6rem;
+  width: 6.4rem; }
+
+.learn-more:hover {
+  background-color: inherit;
+  border: 1px solid var(--almost-black); }
+
+.app-logo-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-self: flex-end;
+  width: 100%; }
+
+.main-img {
+  width: 25rem; }
+
+.main-img img {
+  width: 100%; }
+
+footer {
+  margin-top: 2rem; }
+
+footer .attribution {
   font-size: 11px;
   text-align: center; }
 
-.attribution a {
+footer .attribution a {
   color: #3e52a3; }
-
-body {
-  background-color: red; }

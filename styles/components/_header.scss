@@ -1,0 +1,49 @@
+header {
+  display: flex;
+}
+
+.logo-container {
+  margin-right: 3rem;
+  width: 4rem;
+  img {
+    width: 100%;
+  }
+}
+
+button {
+  background: inherit;
+  border: none;
+  color: var(--medium-gray);
+  font-weight: 700;
+  width: 5rem;
+  cursor: pointer;
+  &:hover {
+    color: var(--almost-black);
+  }
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+}
+
+#features {
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#company {
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.login {
+  margin-left: auto;
+}
+
+.register {
+  border: 1px solid var(--almost-black);
+  border-radius: 8px;
+}
