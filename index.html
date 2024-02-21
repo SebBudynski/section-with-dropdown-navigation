@@ -14,34 +14,36 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <img src="images/logo.svg" alt="logo" />
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-button" id="features">Features</button>
-        <div class="dropdown-content">
-          <a href="#">Todo List</a>
-          <a href="#">Calendar</a>
-          <a href="#">Reminders</a>
-          <a href="#">Planing</a>
+      <div>
+        <button class="features">Features</button>
+        <div class="dropdown-features hidden">
+          <a href="#"> <img src="images/icon-todo.svg" alt="" />Todo List</a>
+          <a href="#"> <img src="images/icon-calendar.svg" alt="" />Calendar</a>
+          <a href="#">
+            <img src="images/icon-reminders.svg" alt="" />Reminders</a
+          >
+          <a href="#"> <img src="images/icon-planning.svg" alt="" />Planing</a>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropdown-button" id="company">Company</button>
-        <div class="dropdown-content">
+      <div>
+        <button class="company">Company</button>
+        <div class="dropdown-company hidden">
           <a href="#">History</a>
-          <a href="#">Our Team </a>
+          <a href="#">Our Team</a>
           <a href="#">Blog</a>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropdown-button">Careers</button>
+      <div>
+        <button class="careers">Careers</button>
       </div>
-      <div class="dropdown">
-        <button class="dropdown-button">About</button>
+      <div>
+        <button class="about">About</button>
       </div>
-      <button class="login">Login</button>
-      <button class="register">Register</button>
+      <div class="login"><button>Login</button></div>
+      <div class="register"><button>Register</button></div>
+      <div class="hamburger-menu">
+        <img src="images/icon-menu.svg" alt="Menu" />
+      </div>
     </header>
 
     <main>
@@ -67,12 +69,20 @@
           </div>
         </div>
       </div>
-      <div class="main-img">
+      <picture class="main-img">
+        <source
+          media="(max-width: 768px)"
+          srcset="/images/image-hero-mobile.png"
+        />
+        <source
+          media="(min-width: 769px)"
+          srcset="/images/image-hero-desktop.png"
+        />
         <img
-          src="images/image-hero-desktop.png"
+          src="/images/image-hero-desktop.png"
           alt="Photo of men using a laptop"
         />
-      </div>
+      </picture>
     </main>
 
     <footer>
@@ -83,5 +93,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
