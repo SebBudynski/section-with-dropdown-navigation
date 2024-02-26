@@ -1,8 +1,19 @@
 @media only screen and (max-width: 768px) {
+  html,
   body {
     width: 100%;
+    height: 100%;
     margin: 0;
   }
+
+  html,
+  body,
+  header,
+  .full-menu {
+    height: 100%;
+    margin: 0;
+  }
+
   main {
     flex-direction: column;
     width: 100vw;
@@ -11,21 +22,25 @@
     }
   }
 
+  header {
+    position: relative;
+    height: 100%;
+  }
+
   .img-content {
     width: 100vw;
   }
 
-  header {
+  .full-menu {
+    position: relative;
+    height: 100%;
+  }
+  .menu,
+  .login-register-container {
     flex-direction: column;
     align-items: flex-end;
-  }
-  .features,
-  .company,
-  .about,
-  .login,
-  .register,
-  .careers {
-    display: block;
+    background-color: white;
+    position: absolute;
   }
 
   .hamburger-menu {

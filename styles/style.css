@@ -141,23 +141,32 @@ body {
   background-color: var(--almost-white); }
 
 header {
-  background-image: url(/images/logo.svg);
-  background-repeat: no-repeat;
-  background-position: left top;
   display: flex;
-  height: 1.5rem;
-  gap: 1rem;
   align-items: center; }
 
-header > div {
+.logo {
+  margin-top: 0.5rem; }
+
+.logo img {
+  width: 100%; }
+
+.full-menu {
+  width: 100%; }
+
+.menu {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  gap: 1rem; }
+
+.menu > div {
   position: relative; }
 
-.logo-container {
-  width: 4rem;
-  margin-right: 1.5rem; }
-
-.logo-container img {
-  width: 100%; }
+.login-register-container {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 0.5rem; }
 
 button {
   background: inherit;
@@ -177,7 +186,7 @@ button:hover {
   background-position: right; }
 
 .features {
-  margin-left: 8rem; }
+  margin-left: 3rem; }
 
 .dropdown-features,
 .dropdown-company {
@@ -190,7 +199,7 @@ button:hover {
   position: absolute;
   padding: 1.2rem;
   text-wrap: nowrap;
-  top: 115%; }
+  top: 150%; }
 
 .dropdown-features a,
 .dropdown-company a {
@@ -201,7 +210,7 @@ button:hover {
   display: flex; }
 
 .dropdown-company {
-  left: 0.75rem; }
+  left: 0.8rem; }
 
 .dropdown-features {
   right: 0rem; }
@@ -212,9 +221,6 @@ button:hover {
 
 .about {
   margin-left: -1rem; }
-
-.login {
-  margin-left: auto; }
 
 .register {
   border: 1px solid var(--almost-black);
@@ -285,26 +291,36 @@ footer .attribution a {
   display: none; }
 
 @media only screen and (max-width: 768px) {
+  html,
   body {
     width: 100%;
+    height: 100%;
+    margin: 0; }
+  html,
+  body,
+  header,
+  .full-menu {
+    height: 100%;
     margin: 0; }
   main {
     flex-direction: column;
     width: 100vw; }
   main .txt-content {
     order: 1; }
+  header {
+    position: relative;
+    height: 100%; }
   .img-content {
     width: 100vw; }
-  header {
+  .full-menu {
+    position: relative;
+    height: 100%; }
+  .menu,
+  .login-register-container {
     flex-direction: column;
-    align-items: flex-end; }
-  .features,
-  .company,
-  .about,
-  .login,
-  .register,
-  .careers {
-    display: block; }
+    align-items: flex-end;
+    background-color: white;
+    position: absolute; }
   .hamburger-menu {
     display: flex; } }
 
