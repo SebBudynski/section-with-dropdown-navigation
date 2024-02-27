@@ -4,8 +4,8 @@ const features = document.querySelector(".features");
 const dropdownFeatures = document.querySelector(".dropdown-features");
 const company = document.querySelector(".company");
 const dropdownCompany = document.querySelector(".dropdown-company");
-const hamburgerMenu = document.querySelector(".hamburger-menu img");
-const hamburgerMenuClose = document.querySelector(".hamburger-menu-close img");
+const hamburgerMenu = document.querySelector(".open-menu img");
+const hamburgerMenuClose = document.querySelector(".close-menu img");
 
 //switch dropdowns and switching arrows img
 features.addEventListener("click", () => {
@@ -19,8 +19,10 @@ company.addEventListener("click", () => {
 
 hamburgerMenu.addEventListener("click", () => {
   document.querySelector("nav").style.display = "flex";
+  document.querySelector(".shadow").style.display = "block";
 });
 
 hamburgerMenuClose.addEventListener("click", () => {
   document.querySelector("nav").style.display = "none";
+  document.querySelector(".shadow").style.display = "none";
 });

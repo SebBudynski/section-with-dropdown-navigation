@@ -13,55 +13,57 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="hamburger-menu">
+    <div class="shadow"></div>
+    <div class="open-menu">
       <img src="images/icon-menu.svg" alt="Menu" />
     </div>
     <nav>
-      <div class="full-menu">
-        <div class="menu">
-          <div class="hamburger-menu-close">
-            <img src="images/icon-close-menu.svg" alt="close menu" />
+      <div class="menu">
+        <div class="close-menu">
+          <img src="images/icon-close-menu.svg" alt="close menu" />
+        </div>
+        <div>
+          <button class="features">Features</button>
+          <div class="dropdown-features hidden">
+            <a href="#"> <img src="images/icon-todo.svg" alt="" />Todo List</a>
+            <a href="#">
+              <img src="images/icon-calendar.svg" alt="" />Calendar</a
+            >
+            <a href="#">
+              <img src="images/icon-reminders.svg" alt="" />Reminders</a
+            >
+            <a href="#">
+              <img src="images/icon-planning.svg" alt="" />Planing</a
+            >
           </div>
-          <div>
-            <button class="features">Features</button>
-            <div class="dropdown-features hidden">
-              <a href="#"> <img src="images/icon-todo.svg" alt="" />Todo List</a>
-              <a href="#">
-                <img src="images/icon-calendar.svg" alt="" />Calendar</a
-              >
-              <a href="#">
-                <img src="images/icon-reminders.svg" alt="" />Reminders</a
-              >
-              <a href="#">
-                <img src="images/icon-planning.svg" alt="" />Planing</a
-              >
-            </div>
+        </div>
+        <div>
+          <button class="company">Company</button>
+          <div class="dropdown-company hidden">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
           </div>
-          <div>
-            <button class="company">Company</button>
-            <div class="dropdown-company hidden">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
-            </div>
-          </div>
-          <div>
-            <button class="careers">Careers</button>
-          </div>
-          <div>
-            <button class="about">About</button>
-          </div>
-          <div class="login-register-container">
-            <div class="login"><button>Login</button></div>
-            <div class="register"><button>Register</button></div>
-          </div>
+        </div>
+        <div>
+          <button class="careers">Careers</button>
+        </div>
+        <div>
+          <button class="about">About</button>
+        </div>
+        <div class="login-register-container">
+          <div class="login"><button>Login</button></div>
+          <div class="register"><button>Register</button></div>
         </div>
       </div>
     </nav>
 
     <main>
       <div class="txt-content">
-        <h1>Make<br class="break"> remote work</h1>
+        <h1>
+          Make<br class="break" />
+          remote work
+        </h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
