@@ -1,10 +1,15 @@
 @media only screen and (max-width: 768px) {
-  html,
+  html {
+    position: relative;
+  }
+
   body {
+    height: 100%;
     margin: 0;
   }
 
   main {
+    margin-top: 4rem;
     flex-direction: column;
     width: 100vw;
     .txt-content {
@@ -13,25 +18,30 @@
   }
 
   nav {
-    position: relative;
-  }
-
-  .full-menu {
     position: absolute;
-    width: 70%;
     right: 0;
     top: 0;
     bottom: 0;
+    width: 70%;
+    background-color: var(--almost-white);
+    display: none;
   }
 
   .menu,
   .login-register-container {
-    background-color: white;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5.5% 4%;
+  }
+
+  .hamburger-menu-close {
+    margin: 1rem;
+    margin-left: auto;
     display: flex;
   }
 
@@ -96,17 +106,12 @@
     margin: auto;
   }
 
-  .register {
-    margin-bottom: 15rem;
-    button {
-      width: 11.5rem;
-    }
+  .register button {
+    width: 12rem;
   }
 
   .login {
     margin: auto;
     margin-top: 1rem;
   }
-
-  
 }

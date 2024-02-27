@@ -138,17 +138,13 @@ html {
 
 body {
   margin: 1rem 2rem;
-  background-color: var(--almost-white); }
+  background-color: var(--almost-white);
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 2% 3.5%; }
 
 nav {
-  display: flex;
-  align-items: center; }
-
-.logo {
-  margin-top: 0.5rem; }
-
-.logo img {
-  width: 100%; }
+  display: flex; }
 
 .full-menu {
   width: 100%; }
@@ -186,7 +182,7 @@ button:hover {
   background-position: right; }
 
 .features {
-  margin-left: 3rem; }
+  margin-left: 5rem; }
 
 .dropdown-features,
 .dropdown-company {
@@ -286,33 +282,44 @@ footer .attribution a {
   color: #3e52a3; }
 
 .hamburger-menu {
-  margin: 1rem 0.5rem;
+  margin-right: 0.5rem;
   margin-left: auto;
   display: none; }
 
+.hamburger-menu-close {
+  display: none; }
+
 @media only screen and (max-width: 768px) {
-  html,
+  html {
+    position: relative; }
   body {
+    height: 100%;
     margin: 0; }
   main {
+    margin-top: 4rem;
     flex-direction: column;
     width: 100vw; }
   main .txt-content {
     order: 1; }
   nav {
-    position: relative; }
-  .full-menu {
     position: absolute;
-    width: 70%;
     right: 0;
     top: 0;
-    bottom: 0; }
+    bottom: 0;
+    width: 70%;
+    background-color: var(--almost-white);
+    display: none; }
   .menu,
   .login-register-container {
-    background-color: white;
     flex-direction: column;
     align-items: flex-start; }
   .hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5.5% 4%; }
+  .hamburger-menu-close {
+    margin: 1rem;
+    margin-left: auto;
     display: flex; }
   .img-content {
     width: 100vw; }
@@ -352,10 +359,8 @@ footer .attribution a {
     padding-right: 1rem; }
   .login-register-container {
     margin: auto; }
-  .register {
-    margin-bottom: 15rem; }
   .register button {
-    width: 11.5rem; }
+    width: 12rem; }
   .login {
     margin: auto;
     margin-top: 1rem; } }
