@@ -8,6 +8,10 @@
     margin: 0;
   }
 
+  ul {
+    flex-direction: column;
+  }
+
   main {
     margin-top: 4rem;
     flex-direction: column;
@@ -36,11 +40,11 @@
   .open-menu {
     display: flex;
     justify-content: flex-end;
-    margin: 5.5% 4%;
+    margin: 1.2rem;
   }
 
   .close-menu {
-    margin: 1rem;
+    margin: 1.2rem;
     margin-left: auto;
     display: flex;
   }
@@ -84,6 +88,7 @@
     background-color: inherit;
     box-shadow: none;
     margin-left: 1.1rem;
+    padding-bottom: 0;
   }
 
   .features,
@@ -95,15 +100,6 @@
 
   button {
     width: auto;
-  }
-
-  .features,
-  .company {
-    padding-right: 1rem;
-  }
-
-  .login-register-container {
-    margin: auto;
   }
 
   .register button {
