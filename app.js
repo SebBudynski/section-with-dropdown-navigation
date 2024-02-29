@@ -6,6 +6,7 @@ const company = document.querySelector(".company");
 const dropdownCompany = document.querySelector(".dropdown-company");
 const hamburgerMenu = document.querySelector(".open-menu img");
 const hamburgerMenuClose = document.querySelector(".close-menu img");
+const shadow = document.querySelector(".shadow");
 
 //switch dropdowns and switching arrows img
 features.addEventListener("click", () => {
@@ -19,10 +20,21 @@ company.addEventListener("click", () => {
 
 hamburgerMenu.addEventListener("click", () => {
   document.querySelector("nav").style.display = "flex";
-  document.querySelector(".shadow").style.display = "block";
+  shadow.style.display = "block";
 });
 
 hamburgerMenuClose.addEventListener("click", () => {
   document.querySelector("nav").style.display = "none";
-  document.querySelector(".shadow").style.display = "none";
+  shadow.style.display = "none";
+});
+
+window.addEventListener("resize", function () {
+  if (this.window.innerWidth > 768) {
+    shadow.style.display = "none";
+  } else if (
+    this.window.innerWidth < 768 &&
+    this.document.querySelector("nav").style.display === "flex"
+  ) {
+    shadow.style.display = "block";
+  }
 });

@@ -110,4 +110,14 @@
     margin: auto;
     margin-top: 1rem;
   }
+
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    top: 0;
+    display: none;
+  }
 }
