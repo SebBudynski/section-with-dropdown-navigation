@@ -17,3 +17,8 @@ footer {
 main {
   max-width: 1240px;
 }
+
+.page-content {
+  min-height: calc(100vh - 80px);
+}
+
