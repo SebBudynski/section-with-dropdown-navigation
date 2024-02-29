@@ -18,19 +18,21 @@ company.addEventListener("click", () => {
   company.classList.toggle("arrow-switch");
 });
 
+//showing and hiding navigation and shadow on mobile
 hamburgerMenu.addEventListener("click", () => {
   document.querySelector("nav").style.display = "flex";
   shadow.style.display = "block";
 });
-
 hamburgerMenuClose.addEventListener("click", () => {
   document.querySelector("nav").style.display = "none";
   shadow.style.display = "none";
 });
 
+//regulation of shadow and navigation between mobile and desktop
 window.addEventListener("resize", function () {
   if (this.window.innerWidth > 768) {
     shadow.style.display = "none";
+    this.document.querySelector("nav").style.display = "";
   } else if (
     this.window.innerWidth < 768 &&
     this.document.querySelector("nav").style.display === "flex"
