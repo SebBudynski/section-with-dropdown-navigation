@@ -12,10 +12,12 @@ const shadow = document.querySelector(".shadow");
 features.addEventListener("click", () => {
   dropdownFeatures.classList.toggle("hidden");
   features.classList.toggle("arrow-switch");
+  dropdownCompany.classList.add("hidden");
 });
 company.addEventListener("click", () => {
   dropdownCompany.classList.toggle("hidden");
   company.classList.toggle("arrow-switch");
+  dropdownFeatures.classList.add("hidden");
 });
 
 //showing and hiding navigation and shadow on mobile

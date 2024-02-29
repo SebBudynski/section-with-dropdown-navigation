@@ -33,12 +33,17 @@
     width: 70%;
     background-color: var(--almost-white);
     display: none;
+    background-image: none;
   }
 
-  .menu,
-  .login-register-container {
+  .menu {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .login-register-container {
+    width: 100%;
+    flex-direction: column;
   }
 
   .open-menu {
@@ -53,8 +58,8 @@
     display: flex;
   }
 
-  .main-img{
-  margin: auto;
+  .main-img {
+    margin: auto;
   }
 
   h1 {
