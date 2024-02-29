@@ -6,6 +6,9 @@
   body {
     height: 100%;
     margin: 0;
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
   }
 
   ul {
@@ -17,6 +20,7 @@
     flex-direction: column;
     width: 100vw;
     .txt-content {
+      align-items: center;
       order: 1;
     }
   }
@@ -49,8 +53,8 @@
     display: flex;
   }
 
-  .img-content {
-    width: 100vw;
+  .main-img{
+  margin: auto;
   }
 
   h1 {
@@ -71,10 +75,10 @@
 
   .learn-more {
     margin: auto;
+    margin-bottom: 1rem;
   }
 
   .app-logo-container {
-    margin-top: 2rem;
     width: 100vw;
     justify-content: space-around;
   }

@@ -138,13 +138,21 @@ html {
 
 body {
   margin: 1rem 2rem;
-  background-color: var(--almost-white);
-  background-image: url(/images/logo.svg);
-  background-repeat: no-repeat;
-  background-position: 2% 3.5%; }
+  background-color: var(--almost-white); }
+
+nav,
+footer {
+  max-width: 1440px;
+  margin: auto; }
+
+main {
+  max-width: 1240px; }
 
 nav {
-  display: flex; }
+  display: flex;
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 10px; }
 
 .menu {
   align-items: center;
@@ -258,7 +266,8 @@ p {
   border-radius: 8px;
   color: var(--almost-white);
   padding: 0.6rem;
-  width: 6.4rem; }
+  width: 6.4rem;
+  margin-bottom: 1rem; }
 
 .learn-more:hover {
   background-color: inherit;
@@ -267,6 +276,7 @@ p {
 .app-logo-container {
   display: flex;
   justify-content: space-between;
+  margin: 2rem 1rem;
   margin-top: auto;
   align-self: flex-end;
   width: 100%; }
@@ -300,7 +310,10 @@ footer .attribution a {
     position: relative; }
   body {
     height: 100%;
-    margin: 0; }
+    margin: 0;
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px; }
   ul {
     flex-direction: column; }
   main {
@@ -308,6 +321,7 @@ footer .attribution a {
     flex-direction: column;
     width: 100vw; }
   main .txt-content {
+    align-items: center;
     order: 1; }
   nav {
     position: absolute;
@@ -329,8 +343,8 @@ footer .attribution a {
     margin: 1.2rem;
     margin-left: auto;
     display: flex; }
-  .img-content {
-    width: 100vw; }
+  .main-img {
+    margin: auto; }
   h1 {
     font-size: 2rem;
     margin: 3rem 0 1rem 0;
@@ -342,9 +356,9 @@ footer .attribution a {
     font-size: 0.875rem;
     margin: 0 1rem 1rem 1rem; }
   .learn-more {
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 1rem; }
   .app-logo-container {
-    margin-top: 2rem;
     width: 100vw;
     justify-content: space-around; }
   .app-logo img {
@@ -367,19 +381,18 @@ footer .attribution a {
     width: 12rem; }
   .login {
     margin: auto;
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    top: 0;
+    display: none; } }
 
 .hidden {
   display: none; }
 
 .arrow-switch {
   background-image: url(/images/icon-arrow-up.svg); }
-
-.shadow {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 30%;
-  top: 0;
-  display: none; }
