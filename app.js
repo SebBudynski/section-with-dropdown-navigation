@@ -11,13 +11,15 @@ const shadow = document.querySelector(".shadow");
 //switch dropdowns and switching arrows img
 features.addEventListener("click", () => {
   dropdownFeatures.classList.toggle("hidden");
-  features.classList.toggle("arrow-switch");
+  features.classList.toggle("arrow-up");
   dropdownCompany.classList.add("hidden");
+  company.classList.remove("arrow-up");
 });
 company.addEventListener("click", () => {
   dropdownCompany.classList.toggle("hidden");
-  company.classList.toggle("arrow-switch");
+  company.classList.toggle("arrow-up");
   dropdownFeatures.classList.add("hidden");
+  features.classList.remove("arrow-up");
 });
 
 //showing and hiding navigation and shadow on mobile

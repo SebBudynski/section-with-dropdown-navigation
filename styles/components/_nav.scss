@@ -17,6 +17,12 @@ li {
   position: relative;
 }
 
+ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
 a {
   color: var(--medium-gray);
   text-decoration: none;
@@ -26,31 +32,11 @@ a {
   }
 }
 
-ul {
-  display: flex;
-  gap: 2rem;
-  font-weight: 500;
-}
-
 .login-register-container {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 0.5rem;
-}
-
-button {
-  background: inherit;
-  border: none;
-  color: var(--medium-gray);
-  font-weight: 500;
-  width: 5rem;
-
-  font-size: 0.85rem;
-  cursor: pointer;
-  &:hover {
-    color: var(--almost-black);
-  }
 }
 
 .features,
@@ -78,7 +64,6 @@ button {
   text-wrap: nowrap;
   top: 40px;
   a {
-    color: var(--medium-gray);
     font-size: 0.75rem;
     align-items: flex-start;
     display: flex;
@@ -90,6 +75,19 @@ button {
   img {
     padding-right: 1rem;
     width: 0.7rem;
+  }
+}
+
+button {
+  background: inherit;
+  border: none;
+  color: var(--medium-gray);
+  font-weight: 500;
+  width: 5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  &:hover {
+    color: var(--almost-black);
   }
 }
 

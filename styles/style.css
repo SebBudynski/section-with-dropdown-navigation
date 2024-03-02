@@ -133,17 +133,17 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 18px;
-  font-family: Epilogue, sans-serif; }
+  font-family: Epilogue, sans-serif;
+  font-size: 18px; }
 
 body {
-  margin: 1rem 2rem;
-  background-color: var(--almost-white); }
+  background-color: var(--almost-white);
+  margin: 1rem 2rem; }
 
 nav,
 footer {
-  max-width: 1440px;
-  margin: auto; }
+  margin: auto;
+  max-width: 1440px; }
 
 main {
   max-width: 1240px; }
@@ -167,6 +167,11 @@ li {
   list-style: none;
   position: relative; }
 
+ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500; }
+
 a {
   color: var(--medium-gray);
   text-decoration: none;
@@ -175,28 +180,11 @@ a {
 a:hover {
   color: var(--almost-black); }
 
-ul {
-  display: flex;
-  gap: 2rem;
-  font-weight: 500; }
-
 .login-register-container {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 0.5rem; }
-
-button {
-  background: inherit;
-  border: none;
-  color: var(--medium-gray);
-  font-weight: 500;
-  width: 5rem;
-  font-size: 0.85rem;
-  cursor: pointer; }
-
-button:hover {
-  color: var(--almost-black); }
 
 .features,
 .company {
@@ -223,7 +211,6 @@ button:hover {
 
 .dropdown-features a,
 .dropdown-company a {
-  color: var(--medium-gray);
   font-size: 0.75rem;
   align-items: flex-start;
   display: flex; }
@@ -234,6 +221,18 @@ button:hover {
 .dropdown-features img {
   padding-right: 1rem;
   width: 0.7rem; }
+
+button {
+  background: inherit;
+  border: none;
+  color: var(--medium-gray);
+  font-weight: 500;
+  width: 5rem;
+  font-size: 0.85rem;
+  cursor: pointer; }
+
+button:hover {
+  color: var(--almost-black); }
 
 .register {
   border: 1px solid var(--almost-black);
@@ -277,11 +276,11 @@ p {
   border: 1px solid var(--almost-black); }
 
 .app-logo-container {
+  align-self: flex-end;
   display: flex;
   justify-content: space-between;
   margin: 2rem 1rem;
   margin-top: auto;
-  align-self: flex-end;
   width: 100%; }
 
 .main-img {
@@ -289,6 +288,14 @@ p {
 
 .main-img img {
   width: 100%; }
+
+.open-menu {
+  display: none;
+  margin-right: 0.5rem;
+  margin-left: auto; }
+
+.close-menu {
+  display: none; }
 
 footer {
   margin-top: 2rem; }
@@ -300,55 +307,47 @@ footer .attribution {
 footer .attribution a {
   color: #3e52a3; }
 
-.open-menu {
-  margin-right: 0.5rem;
-  margin-left: auto;
-  display: none; }
-
-.close-menu {
-  display: none; }
-
 @media only screen and (max-width: 768px) {
   html {
     position: relative; }
   body {
-    height: 100%;
-    margin: 0;
     background-image: url(/images/logo.svg);
     background-repeat: no-repeat;
-    background-position: 10px 10px; }
+    background-position: 10px 10px;
+    height: 100%;
+    margin: 0; }
   ul {
     flex-direction: column; }
   main {
-    margin-top: 4rem;
     flex-direction: column;
+    margin-top: 4rem;
     width: 100vw; }
   main .txt-content {
     align-items: center;
     order: 1; }
   nav {
+    background-color: var(--almost-white);
+    background-image: none;
+    bottom: 0;
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
-    width: 70%;
-    background-color: var(--almost-white);
-    display: none;
-    background-image: none; }
+    width: 70%; }
   .menu {
-    flex-direction: column;
-    align-items: flex-start; }
-  .login-register-container {
-    width: 100%;
+    align-items: flex-start;
     flex-direction: column; }
+  .login-register-container {
+    flex-direction: column;
+    width: 100%; }
   .open-menu {
     display: flex;
     justify-content: flex-end;
     margin: 1.2rem; }
   .close-menu {
+    display: flex;
     margin: 1.2rem;
-    margin-left: auto;
-    display: flex; }
+    margin-left: auto; }
   .main-img {
     margin: auto; }
   h1 {
@@ -358,24 +357,24 @@ footer .attribution a {
   .break {
     display: none; }
   p {
-    text-align: center;
     font-size: 0.875rem;
+    text-align: center;
     margin: 0 1rem 1rem 1rem; }
   .learn-more {
     margin: auto;
     margin-bottom: 1rem; }
   .app-logo-container {
-    width: 100vw;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 100vw; }
   .app-logo img {
     width: 4rem; }
   .dropdown-features,
   .dropdown-company {
-    position: static;
     background-color: inherit;
     box-shadow: none;
     margin-left: 1.1rem;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    position: static; }
   .features,
   .about,
   .company,
@@ -390,15 +389,15 @@ footer .attribution a {
     margin-top: 1rem; }
   .shadow {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
     bottom: 0;
-    width: 30%;
+    display: none;
+    left: 0;
+    position: absolute;
     top: 0;
-    display: none; } }
+    width: 30%; } }
+
+.arrow-up {
+  background-image: url(/images/icon-arrow-up.svg); }
 
 .hidden {
   display: none; }
-
-.arrow-switch {
-  background-image: url(/images/icon-arrow-up.svg); }
