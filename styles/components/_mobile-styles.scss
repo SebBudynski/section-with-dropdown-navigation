@@ -80,15 +80,19 @@
 
   .learn-more {
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .app-logo-container {
-    justify-content: space-around;
-    width: 100vw;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .app-logo {
+    width: 20%;
   }
   .app-logo img {
-    width: 4rem;
+    width: 100%;
   }
 
   .dropdown-features,
